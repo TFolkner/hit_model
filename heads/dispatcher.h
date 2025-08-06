@@ -1,34 +1,35 @@
-//heads
+// libres =============================================
 #include <iostream>
 #include <fstream>
+#include <stdexcept>
+#include <string>
+#include <assert.h>
+#include <vector>
 #include <math.h>
+#include <random>
 
-// constatn values
-#define sFile_init = "../initial_data/init.ini"
-#define file_name_size 128
-
-
-// int
-#ifndef heads
-	extern
-#endif
-	int 
-	init_disp
-	;
-
+// data struct =======================================
+struct ConfigData {
+	int distribution_arc;
+	int distribution_radius;
+	double radius;
+	int shots;
+	double step;
+	char sFile_cyrcle[128];
+	char sFile_shots[128];
+};
 
 
-// char
-#ifndef heads
-	extern
-#endif
-	char sFile_file_1 [file_name_size]
-	;
+// macroses ==========================================
+#define sFile_init "initial_data/init.ini"
+
+
+
 
 
 // func protos
-int read_init_data();
-int dispatcher();
+int main_dispatcher();
+ConfigData read_init();
 
 
 

@@ -11,11 +11,28 @@
 
 
 int main() {
-	printf ("   project name     \n");
-	printf ("   Markov I.M.      \n");
-	printf ("   proj version     \n");
+    printf("\n");
+    printf("I.M.Markov \n");
+    printf("Hit model v1.0 \n");
+    printf("------------------------------------------------------------------\n");
+    printf("\n");
 
-	system ("pause");
-	return 0;
+    switch (main_dispatcher()) {
+        // init error
+    case -1:
+        break;
+
+        // succes launch
+    case 0:
+        printf("secces launch\n");
+        break;
+
+        // .......
+    case 1:
+        break;
+
+    }
+    printf("bye bye :)\n");
+    return 0;
 }
 
