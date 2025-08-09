@@ -2,7 +2,7 @@ clear;
 clc;
 
 % НУ
-alpha = 5 * pi/180; % рад
+alpha = 5 * pi/180; % град
 r = 1;
 steps = 2*pi / alpha;
 x = zeros (steps, 1);

@@ -14,7 +14,7 @@ struct ConfigData {
 	int distribution_radius;
 	double radius;
 	int shots;
-	double step;
+	double alpha;
 	char sFile_cyrcle[128];
 	char sFile_shots[128];
 };
@@ -22,6 +22,8 @@ struct ConfigData {
 
 // macroses ==========================================
 #define sFile_init "initial_data/init.ini"
+#define const_pi 3.1415926535
+#define const_cyrcle_grad 360
 
 
 
