@@ -1,5 +1,6 @@
 /*
-* Описание проекта
+* I.M.Markov
+* Hit model v1.0
 */
 
 #include "../heads/dispatcher.h"

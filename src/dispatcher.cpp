@@ -63,8 +63,9 @@ int main_dispatcher() {
         assert(0);
     }
     for (int print_count = 0; print_count < cfg.shots; print_count++) {
-        fprintf(pFile_shots, " %10.5f %10.5f \n", shot_line_x[print_count],
-                                                  shot_line_y[print_count]);
+        fprintf(pFile_shots, " %10.5f %10.5f %10.5f \n", shot_line_x[print_count],
+                                                         shot_line_y[print_count],
+                                                         shot_alphas[print_count]);
     }
 
     return 0;
